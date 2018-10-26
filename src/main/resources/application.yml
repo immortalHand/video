@@ -1,0 +1,57 @@
+#spring:
+#  activemq:
+#    broker-url: tcp://localhost:61616
+#    in-memory: true
+#    pool:
+#      enabled: true
+#  redis:
+#    host: 192.168.72.128
+#    password:
+#    port: 6379
+#  mail:
+#    host: smtp.163.com
+#    username: wpf52sh@163.com
+#    password: wpf123456
+#    from: wpf52sh@163.com
+
+server:
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/video?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+
+  devtools:
+    restart:
+      enabled: true
+
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd
+
+  freemarker:
+    suffix: .html
+    cache: false
+    template-loader-path: classpath:/templates
+
+
+mybatis:
+  mapper-locations: classpath:mapping/*/*.xml
+  type-aliases-package: com.wpf.video.pojo
+
+# 分页配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
