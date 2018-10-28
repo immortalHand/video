@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.wpf.video.dao")
+@MapperScan("com.wpf.video.mapper")
 public class VideoApplication {
 
     public static void main(String[] args) {

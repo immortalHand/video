@@ -11,11 +11,12 @@ public class PageController {
 
     @GetMapping("/")
     public String goIndex(HttpServletRequest request){
-        String url = "web";
+        /*String url = "web";
         boolean isMoblie = MoblieUtil.IsMoblie(request);
         if(isMoblie){
             url = "mobile";
         }
-        return url+"/index";
+        System.out.println(url);*/
+        return "index";
     }
 }
