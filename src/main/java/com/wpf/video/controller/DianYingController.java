@@ -2,7 +2,7 @@ package com.wpf.video.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.wpf.video.pojo.Dianying;
-import com.wpf.video.pojo.Result;
+import com.wpf.video.pojo.ResultVo;
 import com.wpf.video.service.VideoService;
 import com.wpf.video.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +18,10 @@ public class DianYingController {
     private VideoService videoService;
 
     @PostMapping("videos")
-    public Result videos(PageUtil pageUtil){
+    public ResultVo videos(PageUtil pageUtil){
         List<Dianying> dianyings= videoService.selectAll(pageUtil);
         pageUtil.setInfos(dianyings);
         pageUtil.setPages(new PageInfo(dianyings).getPages());
-        return new Result(true,pageUtil);
+        return ResultVo.ok("查询视频",pageUtil);
     }
 }

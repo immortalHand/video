@@ -1,9 +1,8 @@
 package com.wpf.video.pojo;
 
 public class Dianying {
-    private Integer id;
 
-    private String ids;
+    private String id;
 
     private String title;
 
@@ -21,20 +20,12 @@ public class Dianying {
 
     private String content;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
-    }
-
-    public String getIds() {
-        return ids;
-    }
-
-    public void setIds(String ids) {
-        this.ids = ids == null ? null : ids.trim();
     }
 
     public String getTitle() {
@@ -42,7 +33,7 @@ public class Dianying {
     }
 
     public void setTitle(String title) {
-        this.title = title == null ? null : title.trim();
+        this.title = title;
     }
 
     public String getImage() {
@@ -50,7 +41,7 @@ public class Dianying {
     }
 
     public void setImage(String image) {
-        this.image = image == null ? null : image.trim();
+        this.image = image;
     }
 
     public String getGrade() {
@@ -58,7 +49,7 @@ public class Dianying {
     }
 
     public void setGrade(String grade) {
-        this.grade = grade == null ? null : grade.trim();
+        this.grade = grade;
     }
 
     public String getTime() {
@@ -66,7 +57,7 @@ public class Dianying {
     }
 
     public void setTime(String time) {
-        this.time = time == null ? null : time.trim();
+        this.time = time;
     }
 
     public String getArea() {
@@ -74,7 +65,7 @@ public class Dianying {
     }
 
     public void setArea(String area) {
-        this.area = area == null ? null : area.trim();
+        this.area = area;
     }
 
     public String getDirect() {
@@ -82,7 +73,7 @@ public class Dianying {
     }
 
     public void setDirect(String direct) {
-        this.direct = direct == null ? null : direct.trim();
+        this.direct = direct;
     }
 
     public String getActor() {
@@ -90,7 +81,7 @@ public class Dianying {
     }
 
     public void setActor(String actor) {
-        this.actor = actor == null ? null : actor.trim();
+        this.actor = actor;
     }
 
     public String getContent() {
@@ -98,6 +89,6 @@ public class Dianying {
     }
 
     public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
+        this.content = content;
     }
 }

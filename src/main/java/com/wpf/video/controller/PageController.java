@@ -1,6 +1,5 @@
 package com.wpf.video.controller;
 
-import com.wpf.video.util.MoblieUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -18,5 +17,22 @@ public class PageController {
         }
         System.out.println(url);*/
         return "index";
+    }
+
+    @GetMapping("/single-page-with-img.html")
+    public String goSinglePageWithImg(){
+        return "single-page-with-img";
+    }
+    @GetMapping("/single-page.html")
+    public String goSinglePage(){
+        return "single-page";
+    }
+    @GetMapping("/single-video.html")
+    public String goSingleVideo(){
+        return "single-video";
+    }
+    @GetMapping("/gallery-video-boxed.html")
+    public String goGalleryVideoBoxed(){
+        return "gallery-video-boxed";
     }
 }
