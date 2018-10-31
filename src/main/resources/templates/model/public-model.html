@@ -1,0 +1,116 @@
+<templates>
+    <template id="header">
+        <div class="row header-top">
+            <div class="col-lg-3 col-md-6 col-sm-5">
+                <a class="main-logo" href="#"><img src="img/main-logo.png" class="main-logo" alt="Muvee Reviews" title="Muvee Reviews"></a>
+            </div>
+            <div class="col-lg-6 hidden-md text-center hidden-sm hidden-xs">
+                <img src="img/banners/banner-sm.jpg" class="img-responsive" alt="Buy Now">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-7 hidden-xs">
+                <div class="right-box">
+                    <button type="button" class="access-btn" data-toggle="modal" data-target="#enquirypopup">登录&nbsp;&nbsp;</button>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL -->
+        <div id="enquirypopup" class="modal fade in " role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content row">
+                    <div class="modal-header custom-modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h2 class="icon"><i class="fa fa-television" aria-hidden="true"></i>free access</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form name="info_form" class="form-inline" action="#" method="post">
+                            <div class="form-group col-sm-12">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <button class="subscribe-btn pull-right" type="submit" title="Subscribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="menu">
+        <div class="row home-mega-menu ">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse js-navbar-collapse megabg dropshd ">
+                        <ul class="nav navbar-nav">
+                            <li style="margin: 0 20px"><a href="index.html">首页</a></li>
+                            <li style="margin: 0 20px"><a href="gallery-video-boxed.html">电影</a></li>
+                            <li style="margin: 0 20px"><a href="single-page.html">电视剧</a></li>
+                            <li style="margin: 0 20px"><a href="single-page-with-img.html">动漫</a></li>
+                            <li style="margin: 0 20px"><a href="single-page-with-img.html">综艺</a></li>
+                            <li style="margin: 0 20px"><a href="login.html">登录</a></li>
+                            <!--<li><a href="gallery-video-boxed.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>-->
+                        </ul>
+                        <!--<ul class="social">
+                           <li class="social-facebook"><a href="#" class="fa fa-facebook social-icons"></a></li>
+                           <li class="social-google-plus"><a href="#" class="fa fa-google-plus social-icons"></a></li>
+                           <li class="social-twitter"><a href="#" class="fa fa-twitter social-icons"></a></li>
+                           <li class="social-youtube"><a href="#" class="fa fa-youtube social-icons"></a></li>
+                           <li class="social-rss"><a href="#" class="fa fa-rss social-icons"></a></li>
+                        </ul>-->
+                        <div class="search-block">
+                            <form>
+                                <input type="search" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.nav-collapse -->
+                </nav>
+            </div>
+        </div>
+    </template>
+
+    <template id="sidebar">
+        <div class="col-lg-2 col-md-4 hidden-sm hidden-xs">
+            <aside class="dark-bg">
+                <!--<article>
+                    <h2 class="icon"><i class="fa fa-flash" aria-hidden="true"></i>trending</h2>
+                    <ul class="sidebar-links">
+                        <li class="fa fa-chevron-right"><a href="#">featured videos</a><span>4.000</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">most viewed</a><span>2.000</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">editor's choice</a><span>650</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">all video</a><span>4.000</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">full hd</a><span>7.800</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">premium</a><span>200</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">movies</a><span>15</span></li>
+                    </ul>
+                </article>
+                <div class="clearfix spacer"></div>-->
+                <article>
+                    <h2 class="icon"><i class="fa fa-gears" aria-hidden="true"></i>类别</h2>
+                    <ul class="sidebar-links">
+                        <li class="fa fa-chevron-right"><a href="#">大陆</a><span>200</span></li>
+                        <!--<li class="fa fa-chevron-right"><a href="#">World News</a><span>2.000</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">Funny videos</a><span>650</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">Hot Stories</a><span>4.000</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">Music Clips</a><span>7.800</span></li>
+                        <li class="fa fa-chevron-right"><a href="#">Premier Trailers</a><span>200</span></li>-->
+                    </ul>
+                </article>
+                <div class="clearfix spacer"></div>
+            </aside>
+        </div>
+    </template>
+</templates>

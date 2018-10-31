@@ -18,7 +18,10 @@ public class PageController {
         System.out.println(url);*/
         return "index";
     }
-
+    @GetMapping("/index.html")
+    public String goIndex2(){
+        return "index";
+    }
     @GetMapping("/single-page-with-img.html")
     public String goSinglePageWithImg(){
         return "single-page-with-img";
@@ -34,5 +37,9 @@ public class PageController {
     @GetMapping("/gallery-video-boxed.html")
     public String goGalleryVideoBoxed(){
         return "gallery-video-boxed";
+    }
+    @GetMapping("/model/public-model.html")
+    public String getModel(){
+        return "model/public-model";
     }
 }

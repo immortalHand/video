@@ -12,4 +12,6 @@ public interface DianyingMapper {
     @Select("select * from dianying")
     List<Dianying> findDianying();
 
+    @Select("select * from dianying where id = #{id}")
+    Dianying findDianYingById(String id);
 }

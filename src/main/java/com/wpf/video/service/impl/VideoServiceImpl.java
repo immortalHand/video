@@ -1,11 +1,8 @@
 package com.wpf.video.service.impl;
 
-import com.github.pagehelper.PageHelper;
-import com.wpf.video.mapper.DianyingMapper;
-import com.wpf.video.pojo.Dianying;
-import com.wpf.video.pojo.DianyingExample;
+import com.wpf.video.mapper.VideoMapper;
+import com.wpf.video.pojo.Video;
 import com.wpf.video.service.VideoService;
-import com.wpf.video.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,13 +12,10 @@ import java.util.List;
 public class VideoServiceImpl implements VideoService {
 
     @Autowired
-    private DianyingMapper dianyingMapper;
+    private VideoMapper videoMapper;
 
     @Override
-    public List<Dianying> selectAll(PageUtil pageUtil) {
-        //DianyingExample dianyingExample = new DianyingExample();
-        PageHelper.startPage(pageUtil.getPage()-1,pageUtil.getList());
-        //return dianyingMapper.selectByExample(dianyingExample);
-        return dianyingMapper.findDianying();
+    public List<Video> findVideoById(String id) {
+        return videoMapper.findVideoById(id);
     }
 }

@@ -1,17 +1,15 @@
 package com.wpf.video.service;
 
-import com.wpf.video.pojo.Dianying;
-import com.wpf.video.util.PageUtil;
-import org.springframework.stereotype.Service;
+import com.wpf.video.pojo.Video;
 
 import java.util.List;
 
 public interface VideoService {
 
-
     /**
-     * 查询所有电影
+     * 通过ID查询播放视频
+     * @param id
      * @return
      */
-    List<Dianying> selectAll(PageUtil pageUtil);
+    List<Video> findVideoById(String id);
 }
