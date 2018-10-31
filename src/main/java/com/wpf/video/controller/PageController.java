@@ -1,5 +1,6 @@
 package com.wpf.video.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -41,5 +42,10 @@ public class PageController {
     @GetMapping("/model/public-model.html")
     public String getModel(){
         return "model/public-model";
+    }
+
+    @GetMapping("/video")
+    public String video(){
+        return "video";
     }
 }
