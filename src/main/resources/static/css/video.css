@@ -8,10 +8,6 @@
     img.img_width{
         height: 250px;
     }
-    video.video-js{
-        width: 100%;
-        height: 200px;
-    }
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width:768px) {
@@ -20,10 +16,6 @@
         overflow: hidden;
     }
     img.img_width{
-        height: 300px;
-    }
-    video.video-js{
-        width: 100%;
         height: 300px;
     }
 }
@@ -37,10 +29,6 @@
     img.img_width{
         height: 300px;
     }
-    video.video-js{
-        width: 100%;
-        height: 400px;
-    }
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
@@ -51,9 +39,5 @@
     }
     img.img_width{
         height: 300px;
-    }
-    video.video-js{
-        width: 100%;
-        height: 500px;
     }
 }

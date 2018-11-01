@@ -1,3 +1,4 @@
+/*让html支持模块开发  slot标签引入template ID*/
 function moduleLoad(url) {
     $.get(url, function (result) {
         var html = $(result);
@@ -11,4 +12,9 @@ function moduleLoad(url) {
 }
 $(document).ready(function () {
     moduleLoad("/model/public-model.html");
+});
+
+/*系统js*/
+$(".nav .dropdown").hover(function() {
+    $(this).find(".dropdown-toggle").dropdown("toggle");
 });

@@ -20,11 +20,14 @@ $(function () {
             var str = "";
             for (var i=0;i<videos.length;i++){
                 if(i == num){
-                    source = "<video id=\"myVideo\" class=\"video-js vjs-default-skin vjs-big-play-centered\" controls preload=\"auto\" data-setup='{}' style=\"margin: auto auto\">\n" +
-                                "<source src='"+videos[i].url+"'  type=\"application/x-mpegURL\" class=\"v_url\">\n" +
-                            "</video>\n";
-                    $(".video-embed-box").empty();
-                    $(".video-embed-box").append(source);
+
+                    var videoObject = {
+                        container: '#video',//“#”代表容器的ID，“.”或“”代表容器的class
+                        variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+                        //autoplay:true,//自动播放
+                        video:  videos[i].url//视频地址
+                    };
+                    var player=new ckplayer(videoObject);
                 }
                 str += "<li><a href='/single-video.html?id="+videos[i].id+"&num="+i+"'>"+videos[i].num+"</a></li>";
             }
@@ -33,3 +36,4 @@ $(function () {
         }
     })
 })
+
