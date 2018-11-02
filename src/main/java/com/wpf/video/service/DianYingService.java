@@ -20,4 +20,11 @@ public interface DianYingService {
      * @return
      */
     Dianying findDianYingById(String id);
+
+    /**
+     * 查询电影通过电影名称模糊查询
+     * @param title
+     * @return
+     */
+    List<Dianying> findDianYingByTitle(String title);
 }

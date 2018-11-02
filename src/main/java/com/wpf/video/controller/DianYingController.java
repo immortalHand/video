@@ -31,4 +31,10 @@ public class DianYingController {
     public ResultVo getDianyingAreas(){
         return ResultVo.ok("");
     }
+
+    @PostMapping("/findDianyingByTitle")
+    public ResultVo findDianYingByTitle(String title){
+        List<Dianying> list = dianYingService.findDianYingByTitle(title);
+        return ResultVo.ok("模糊查询电影",list);
+    }
 }

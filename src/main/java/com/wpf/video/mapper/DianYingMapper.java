@@ -7,11 +7,14 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface DianyingMapper {
+public interface DianYingMapper {
 
-    @Select("select * from dianying")
-    List<Dianying> findDianying();
+    @Select("SELECT * FROM dianying WHERE TIME != 'null' ORDER BY TIME DESC")
+    List<Dianying> findDianYings();
 
     @Select("select * from dianying where id = #{id}")
     Dianying findDianYingById(String id);
+
+    @Select("SELECT * FROM dianying WHERE title LIKE '%#{title}%'")
+    List<Dianying> findDianYingByTitle(String title);
 }
