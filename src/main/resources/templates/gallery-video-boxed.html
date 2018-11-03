@@ -30,7 +30,7 @@
          <!-- MENU -->
          <div slot="menu"></div>
          <!-- GALLERY VIDEO GRID BOXED -->
-         <div class="row">
+         <div class="row"  id="head">
             <div class="container">
                <div class="row">
                   <!-- VIDEO POSTS -->	
@@ -52,7 +52,7 @@
                                  <button class="btn btn-default filter-button">印度</button>
                                  <button class="btn btn-default filter-button">其他</button>
                               </div>
-                              <div class="row clear-auto v_videos" id="head">
+                              <div class="row clear-auto v_videos">
                                  <article class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                                     <!-- POST L size -->
                                     <div class="post post-medium">
@@ -129,12 +129,7 @@
       <script src="js/gallery-video-boxed.js"></script>
       <!-- MODAL -->
    <script>
-       $(function(){
-              $("#toTop").click(function(){
-                      $("html").animate({"scrollTop": "0px"},500); //IE,FF
-                      $("body").animate({"scrollTop": "0px"},500); //Webkit
-              });
-       })
+
    </script>
    </body>
 </html>
